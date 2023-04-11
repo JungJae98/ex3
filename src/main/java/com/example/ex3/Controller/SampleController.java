@@ -22,7 +22,7 @@ public class SampleController {
         log.info("ex1의 정보");
     }
 
-    @GetMapping({"/ex2", "/exLink"})
+    @GetMapping({"/ex2", "/exLink", "/exFormat"})
     public void exModel(Model model){
         List<SampleDTO> list = IntStream.rangeClosed(1,20).asLongStream().mapToObj(
                 i -> {
@@ -55,4 +55,5 @@ public class SampleController {
     public void ex3(){
         log.info("ex() 호출됌");
     }
+
 }
