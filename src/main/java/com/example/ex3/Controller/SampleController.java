@@ -56,7 +56,7 @@ public class SampleController {
         log.info("ex() 호출됌");
     }
 
-    @GetMapping("/exLayout")
+    @GetMapping({"/exLayout", "/exTemplate", "/exSidebar"})
     public void exLayout1(){
         log.info("exLayout() 호출됨");
     }
